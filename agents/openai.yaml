@@ -1,0 +1,4 @@
+interface:
+  display_name: "You Got This"
+  short_description: "Autonomous project execution, critique, and audit"
+  default_prompt: "Use $you-got-this to execute this project goal autonomously, preserving its intent and checking the real result."
