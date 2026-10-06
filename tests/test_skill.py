@@ -28,7 +28,7 @@ def test_codex_metadata() -> None:
 def test_docs_and_examples_are_linked() -> None:
     readme = README.read_text()
     examples = (ROOT / "examples.md").read_text()
-    assert "examples.md" in readme
+    assert "](examples.md)" in readme
     assert "$you-got-this" in readme
     assert "$you-got-this gauntlet" in examples
     assert "$you-got-this audit" in examples

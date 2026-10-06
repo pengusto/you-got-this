@@ -8,12 +8,14 @@ You provide the intent. The skill finds the real project context, chooses a prac
 
 ### Codex
 
+Use an unused destination directory:
+
 ```sh
 mkdir -p ~/.codex/skills
 git clone https://github.com/pengusto/you-got-this.git ~/.codex/skills/you-got-this
 ```
 
-Then invoke it with:
+Start a new agent session if the skill is not yet listed, then invoke it with:
 
 ```text
 $you-got-this <goal>
@@ -34,6 +36,8 @@ git -C ~/.codex/skills/you-got-this pull --ff-only
 | `$you-got-this audit [area]` | Evidence-backed findings without a major implementation |
 
 The mode word only applies when it is the first argument. A goal containing “audit” or “gauntlet” is still treated as a normal goal unless it starts with that mode.
+
+See [examples.md](examples.md) for prompts and expected mode selection.
 
 ## What it does
 

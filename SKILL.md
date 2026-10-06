@@ -50,7 +50,7 @@ major direction change instead of silently replacing the idea.
 Choose the strongest practical, inspectable bar for the actual domain. Use a
 provided reference; otherwise infer a credible shipped product, mature CLI,
 reliable backend, ergonomic library, or equivalent target. Translate vague
-words such as “good” or “production-ready” into observable checks: rendered
+words such as "good" or "production-ready" into observable checks: rendered
 frames, behavior, latency, failure handling, accessibility, tests, recovery,
 or other evidence that matters to this project.
 
@@ -63,11 +63,12 @@ onboarding, integration gaps, placeholders, documentation, or polish.
 
 - Let the task determine the architecture and decomposition.
 - Keep tightly coupled work under one coherent owner.
-- Parallelize only genuinely independent work; integrate it before judging.
+- Parallelize only genuinely independent work; integrate it before judging
+  completion.
 - For important quality-sensitive work, use a builder and a separate
   fresh-context critic when the host supports it. Have the critic inspect the
-  actual result and the quality bar, not the builder’s summary.
-- Implement the smallest complete change using existing patterns and
+  actual result and the quality bar, not the builder's summary.
+- Implement the smallest complete change. Reuse existing patterns and
   dependencies. Do not add a framework, agent-management layer, state
   machine, database, scoreboard, or fixed team/iteration protocol.
 - Run relevant tests and checks. For non-trivial logic leave one runnable

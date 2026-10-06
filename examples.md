@@ -24,6 +24,15 @@ $you-got-this audit payment retry behavior
 
 Audit mode reports prioritized, evidence-backed findings and does not turn an inspection into a broad rewrite unless the request also asks for fixes.
 
+## Mode words inside a goal
+
+```text
+$you-got-this Fix the audit export button.
+```
+
+This uses default execution: `Fix` is the first argument. The word `audit`
+inside the goal does not select audit mode.
+
 ## Good goals
 
 ```text
